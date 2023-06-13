@@ -10,8 +10,24 @@
 <body>
     <div class="container m-5">
         <div class="row g-0">
-           
-            <span class="col">
+            
+            <span class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./img/Media-Ponderada.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculo média ponderada</h5>
+                        <p class="card-text">Insira <i>x</i><sub>n</sub> notas relacionadas aos seus respectivos pesos <i>p</i><sub>n</sub> para calcular a média ponderada do conjunto</p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nota" placeholder="x1,x2,x3..." >
+                            <input type="text" class="form-control" id="peso" placeholder="p1,p2,p3..." >
+                            <input class="btn btn-primary" onclick="mediaPonderada()" type="button" value="Calcular">
+                        </div>    
+                        <p id="demo-ponderada"></p>
+                        <script src="./js/mediaPonderada.js"></script>
+                    </div>
+                </div>
+            </span>
+            <span class="col-4">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="./img/imc.png" alt="Card image cap">
                     <div class="card-body">
@@ -27,7 +43,25 @@
                     </div>
                 </div>    
             </span>
-            <span class="col">
+            
+            <span class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./img/Objetos-em-JavaScript.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Objeto aluno</h5>
+                        <p class="card-text">Vamos criar um objeto usando Javascript. Insira as propriedades "nome" e "idade" abaixo </p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nome" placeholder="Insira o nome" >
+                            <input type="text" class="form-control" id="idade" placeholder="Insira a idade" >
+                            <input class="btn btn-primary" onclick="createAluno()" type="button" value="Criar objeto">
+                        </div>    
+                        <p id="demo-obj"></p>
+                        <script src="./js/obj.js"></script>
+                    </div>
+                </div>    
+            </span>
+
+            <span class="col-4">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="./img/Media-Aritmetica.jpg" alt="Card image cap">
                     <div class="card-body">
