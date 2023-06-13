@@ -68,7 +68,7 @@
                         <h5 class="card-title">Calculo média aritmética</h5>
                         <p class="card-text">Insira <i>x</i> numeros abaixo para calcular a média do conjunto</p>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="media" placeholder="Ex:1,4,6..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="text" class="form-control" id="media" placeholder="Ex:1,4,6...">
                             <button class="btn btn-primary" onclick="media()" type="button" id="button-addon2">Calcular</button>
                         </div>    
                         <p id="demo"></p>
@@ -83,9 +83,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Concatenacao JS</h5>
                         <p class="card-text">Insira seu nome e sobrenome abaixo</p>
-                        <div class="input-group mb-3">
-                            <input type="text" id="primeiroNome" class="form-control" placeholder="nome">
-                            <input type="text" id="ultimoNome" class="form-control" placeholder="sobrenome">
+                        <div class="input-group mb-3" novalidate>
+                            <input type="text" id="primeiroNome" class="form-control" placeholder="nome" required>
+                            <input type="text" id="ultimoNome" class="form-control" placeholder="sobrenome" required>
                         </div>
                         <input class="btn btn-primary" onclick="concatenacao()" type="button" value="Concatenar">
                         <p id="demo-concat"></p>
