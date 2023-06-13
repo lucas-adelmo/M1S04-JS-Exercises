@@ -3,9 +3,14 @@ function mediaPonderada(){
     let inputNotas = document.getElementById('nota').value;
     let inputPesos = document.getElementById('peso').value;
 
+    const regex = /^[\d.,]+$/;
+
     if(inputNotas.length == 0 || inputPesos.length ==0){
         alert("Preencha ambos os campos!")
-    } else{
+    } else if (regex.test(inputNotas)==false || regex.test(inputPesos)==false){
+        alert("O formato dos campos deve ser de números separados por vírgulas!")    
+    
+    }else{
         
         let notas = inputNotas.split(",").map(Number);
         let pesos = inputPesos.split(",").map(Number);
